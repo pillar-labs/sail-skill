@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="assets/sail-logo.png" alt="SAIL — Secure AI Lifecycle" width="346">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/sail-logo-dark.png">
+    <img src="assets/sail-logo-light.png" alt="SAIL — Secure AI Lifecycle" width="346">
+  </picture>
 </p>
 
 # SAIL Skill — Secure AI Lifecycle by Pillar Security
