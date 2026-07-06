@@ -1,0 +1,21 @@
+{
+  "name": "pillar-security",
+  "owner": {
+    "name": "Pillar Security",
+    "url": "https://www.pillar.security"
+  },
+  "metadata": {
+    "description": "Pillar Security's Claude Code plugins — starting with the SAIL (Secure AI Lifecycle) framework for securing AI applications and agents.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "sail",
+      "source": "./sail",
+      "description": "Apply the SAIL V2 (Secure AI Lifecycle) framework to secure AI applications and agents — gap analyses, security roadmaps, maturity assessments, compliance checklists (ISO/IEC 42001, EU AI Act, OWASP, DASF, AIUC-1), control prioritization, and vendor RFPs. Grounded in the full 91-risk SAIL catalog.",
+      "version": "1.0.0",
+      "category": "security",
+      "keywords": ["ai-security", "agent-security", "sail", "llm", "mcp", "compliance", "governance", "red-teaming"]
+    }
+  ]
+}

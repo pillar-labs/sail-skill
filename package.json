@@ -1,0 +1,8 @@
+{
+  "name": "sail-skill",
+  "private": true,
+  "description": "SAIL V2 (Secure AI Lifecycle) skill by Pillar Security — 91-risk catalog for securing AI applications and agents",
+  "pi": {
+    "skills": ["./sail/skills"]
+  }
+}

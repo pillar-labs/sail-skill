@@ -1,0 +1,11 @@
+{
+  "name": "sail",
+  "description": "Apply the SAIL V2 (Secure AI Lifecycle) framework by Pillar Security to secure AI applications and agents — gap analyses, security roadmaps, maturity assessments, compliance checklists, control prioritization, and vendor RFPs. Grounded in the full 91-risk SAIL catalog.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Pillar Security",
+    "url": "https://www.pillar.security"
+  },
+  "homepage": "https://www.pillar.security",
+  "keywords": ["ai-security", "agent-security", "sail", "llm", "mcp", "compliance", "governance", "red-teaming"]
+}

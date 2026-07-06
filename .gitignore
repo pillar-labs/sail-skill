@@ -1,0 +1,12 @@
+# Eval run artifacts (dev-only, regenerated)
+sail-workspace/
+
+# Stale/local build artifact (use dist/ instead)
+/sail.zip
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
