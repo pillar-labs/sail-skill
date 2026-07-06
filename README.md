@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/sail-logo.png" alt="SAIL — Secure AI Lifecycle" width="346">
+</p>
+
 # SAIL Skill — Secure AI Lifecycle by Pillar Security
 
 An agent skill that applies **SAIL V2** — [Pillar Security](https://www.pillar.security)'s Secure AI Lifecycle framework — to real systems. It bundles the full SAIL V2 risk catalog (**91 risks across 7 lifecycle phases**, each with mitigations and standards mappings) as reference files the agent reads on demand, so every answer is grounded in the actual catalog: real SAIL IDs, real mappings, no hallucinated controls.
