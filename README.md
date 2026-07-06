@@ -222,3 +222,11 @@ After editing the skill, rebuild `dist/sail-skill.zip` / `dist/sail.skill` — s
 ## About SAIL
 
 SAIL (Secure AI Lifecycle) V2 covers the agentic attack surface across three zones (code & pipeline, cloud agents, endpoint agents) and seven lifecycle phases (Policy → Discovery → Posture → Red Teaming → Runtime Controls → Sandbox → Govern), with 91 risks mapped to external standards (ISO/IEC 42001, EU AI Act, OWASP LLM & Agentic Top 10, DASF, AIUC-1). Standards mappings indicate alignment, not automatic compliance. Learn more at [pillar.security](https://www.pillar.security).
+
+## License
+
+© Pillar Security. This repository is licensed under [CC BY-NC-SA 4.0](LICENSE): share and adapt for non-commercial purposes, credit "SAIL by Pillar Security", and distribute adaptations under the same license.
+
+**Additional permission:** you may use this material internally within your organization, including for commercial purposes — installing the skill, running assessments, and embedding the catalog in internal documentation and tooling. Redistribution or incorporation into products or services offered to third parties requires a separate license — contact [Pillar Security](https://www.pillar.security).
+
+The SAIL name and the Pillar Security name and logo are trademarks of Pillar Security and are not licensed.
