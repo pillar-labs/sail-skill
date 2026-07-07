@@ -5,7 +5,7 @@ Applies **SAIL V2** (Secure AI Lifecycle) by [Pillar Security](https://www.pilla
 ## Install
 
 ```
-/plugin marketplace add pillar-security/sail-skill
+/plugin marketplace add pillar-labs/sail-skill
 /plugin install sail@pillar-security
 ```
 
