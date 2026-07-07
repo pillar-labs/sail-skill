@@ -47,14 +47,14 @@ Pick your harness/software in the matrix, then follow its section below.
 
 | Harness / software | Install | Details |
 | :-- | :-- | :-- |
-| **Claude Code** (CLI / IDE / desktop) | `/plugin marketplace add pillar-security/sail-skill`<br>`/plugin install sail@pillar-security` | [§ Claude Code](#claude-code) |
+| **Claude Code** (CLI / IDE / desktop) | `/plugin marketplace add pillar-labs/sail-skill`<br>`/plugin install sail@pillar-security` | [§ Claude Code](#claude-code) |
 | **Claude.ai / Desktop / Cowork** | **Customize → Skills** → upload `dist/sail-skill.zip` | [§ Claude.ai / Desktop / Cowork](#claudeai--desktop--cowork) |
-| **OpenAI Codex CLI** | `$skill-installer install https://github.com/pillar-security/sail-skill/tree/main/sail/skills/sail` | [§ OpenAI Codex CLI](#openai-codex-cli) |
-| **Google Antigravity** (IDE / CLI) | `npx skills add https://github.com/pillar-security/sail-skill/tree/main/sail/skills/sail -a antigravity -g -y` | [§ Google Antigravity](#google-antigravity) |
-| **pi** | `pi install https://github.com/pillar-security/sail-skill` | [§ pi](#pi) |
+| **OpenAI Codex CLI** | `$skill-installer install https://github.com/pillar-labs/sail-skill/tree/main/sail/skills/sail` | [§ OpenAI Codex CLI](#openai-codex-cli) |
+| **Google Antigravity** (IDE / CLI) | `npx skills add https://github.com/pillar-labs/sail-skill/tree/main/sail/skills/sail -a antigravity -g -y` | [§ Google Antigravity](#google-antigravity) |
+| **pi** | `pi install https://github.com/pillar-labs/sail-skill` | [§ pi](#pi) |
 | **ChatGPT** (all plans) | [chatgpt.com/skills](https://chatgpt.com/skills) → **New skill** → upload `dist/sail-skill.zip` | [§ ChatGPT](#chatgpt) |
 | **opencode** | `cp -r sail/skills/sail ~/.config/opencode/skills/sail` | [§ opencode](#opencode) |
-| **Other SKILL.md-compatible agents** | `npx skills add https://github.com/pillar-security/sail-skill/tree/main/sail/skills/sail -g -y` | [§ Other agents](#other-skillmd-compatible-agents) |
+| **Other SKILL.md-compatible agents** | `npx skills add https://github.com/pillar-labs/sail-skill/tree/main/sail/skills/sail -g -y` | [§ Other agents](#other-skillmd-compatible-agents) |
 
 > **Slash commands are Claude Code-only.** Everywhere else you get the full skill — it triggers automatically on AI/agent-security intent, and the guided intake replaces the commands.
 >
@@ -69,11 +69,11 @@ Pick your harness/software in the matrix, then follow its section below.
 >
 > ```
 > # OpenAI Codex (in-session):
-> $skill-installer install https://github.com/pillar-security/sail-skill/tree/main/sail/skills/sail
+> $skill-installer install https://github.com/pillar-labs/sail-skill/tree/main/sail/skills/sail
 > # Google Antigravity (and 20+ other agents via Vercel's skills CLI):
-> npx skills add https://github.com/pillar-security/sail-skill/tree/main/sail/skills/sail -a antigravity -g -y
+> npx skills add https://github.com/pillar-labs/sail-skill/tree/main/sail/skills/sail -a antigravity -g -y
 > # pi:
-> pi install https://github.com/pillar-security/sail-skill
+> pi install https://github.com/pillar-labs/sail-skill
 > ```
 >
 >    **Otherwise, copy the skill folder to your harness's skills directory:**
@@ -92,13 +92,13 @@ Pick your harness/software in the matrix, then follow its section below.
 > ```
 >
 > 3. **Verify:** the file `<skills-dir>/sail/SKILL.md` exists and its frontmatter `name` is `sail`. The skill loads in the **next session** — tell your user to restart/reload, then test with *"What does SAIL 5.17 cover?"* (expected: cites *Maker-Identity Inheritance in Low-Code Agents*).
-> 4. **Claude Code bonus:** for the `/sail:*` commands, tell your user to run `/plugin marketplace add pillar-security/sail-skill` and `/plugin install sail@pillar-security` instead of (or in addition to) the copy — plugin slash commands can't be installed by copying files.
+> 4. **Claude Code bonus:** for the `/sail:*` commands, tell your user to run `/plugin marketplace add pillar-labs/sail-skill` and `/plugin install sail@pillar-security` instead of (or in addition to) the copy — plugin slash commands can't be installed by copying files.
 > 5. **Sandboxed harnesses with no filesystem skills dir** (Claude.ai, Cowork, ChatGPT): you cannot self-install; point your user to the matching section below and hand them `dist/sail-skill.zip`.
 
 ### Claude Code
 
 ```
-/plugin marketplace add pillar-security/sail-skill
+/plugin marketplace add pillar-labs/sail-skill
 /plugin install sail@pillar-security
 ```
 
@@ -124,7 +124,7 @@ One skills system across claude.ai, the Claude Desktop app, and Cowork — insta
 Easiest — inside a Codex session, the built-in installer takes this repo's URL directly:
 
 ```
-$skill-installer install https://github.com/pillar-security/sail-skill/tree/main/sail/skills/sail
+$skill-installer install https://github.com/pillar-labs/sail-skill/tree/main/sail/skills/sail
 ```
 
 Codex picks up new skills automatically (restart if it doesn't appear). Manual alternative — Codex discovers skills in `~/.agents/skills` (personal) or `.agents/skills` (project):
@@ -140,7 +140,7 @@ Invoke explicitly with `$sail` (type `$` or `/skills` in the TUI) or just ask ab
 Antigravity (IDE and CLI) reads SKILL.md skills from `.agents/skills` (workspace) and `~/.agents/skills` (user). Google's codelabs endorse the `skills` CLI for installation:
 
 ```bash
-npx skills add https://github.com/pillar-security/sail-skill/tree/main/sail/skills/sail -a antigravity -g -y
+npx skills add https://github.com/pillar-labs/sail-skill/tree/main/sail/skills/sail -a antigravity -g -y
 ```
 
 (Drop `-g` for a workspace-level install.) On older CLI builds that only read `~/.gemini/antigravity-cli/skills/`, move or copy the installed `sail/` folder there. Manual alternative: `cp -r sail/skills/sail ~/.agents/skills/sail`.
@@ -150,7 +150,7 @@ npx skills add https://github.com/pillar-security/sail-skill/tree/main/sail/skil
 The repo ships a pi package manifest, so it's a one-liner:
 
 ```bash
-pi install https://github.com/pillar-security/sail-skill
+pi install https://github.com/pillar-labs/sail-skill
 ```
 
 pi also reads `~/.agents/skills`, so a Codex or Antigravity install covers pi too (and vice versa via the shared directory).
@@ -179,7 +179,7 @@ opencode also reads `~/.claude/skills` and `.agents/skills`, so a Claude Code or
 The skill is a plain folder — `SKILL.md` + `references/` — following the open agent-skills format. Vercel's `skills` CLI installs it for 20+ agents:
 
 ```bash
-npx skills add https://github.com/pillar-security/sail-skill/tree/main/sail/skills/sail -g -y
+npx skills add https://github.com/pillar-labs/sail-skill/tree/main/sail/skills/sail -g -y
 ```
 
 Or copy `sail/skills/sail/` into whatever skills directory your tool documents / unzip `dist/sail-skill.zip` there.

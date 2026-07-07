@@ -15,7 +15,7 @@ In Claude Code, type `/sail` for a guided intake, or use the direct commands (`/
 
 ## Install
 
-Installation instructions for **all harnesses** — Claude Code, Claude.ai/Desktop/Cowork, OpenAI Codex CLI, Google Antigravity, ChatGPT, pi, opencode — live in the repository README: **[github.com/pillar-security/sail-skill](https://github.com/pillar-security/sail-skill)**.
+Installation instructions for **all harnesses** — Claude Code, Claude.ai/Desktop/Cowork, OpenAI Codex CLI, Google Antigravity, ChatGPT, pi, opencode — live in the repository README: **[github.com/pillar-labs/sail-skill](https://github.com/pillar-labs/sail-skill)**.
 
 ## About SAIL
 
